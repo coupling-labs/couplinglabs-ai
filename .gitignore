@@ -1,0 +1,7 @@
+# Never commit personal files, exports, or junk that lands in this folder
+*.pdf
+*.eml
+*.zip
+Thumbs.db
+desktop.ini
+.DS_Store
