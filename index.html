@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupling Labs — AI, coupled to the systems you already run</title>
+  <meta name="description" content="Coupling Labs builds practical AI automation: workflow automation, enterprise integration, multi-model orchestration, generative media, and software-operating agents.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Coupling Labs">
+  <meta property="og:description" content="AI, coupled to the systems you already run.">
+  <meta property="og:url" content="https://couplinglabs.ai">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="cad-readout" aria-hidden="true"><span id="cad-x">X 0000</span> <span id="cad-y">Y 0000</span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Coupling Labs home">
+      <svg class="wordmark-glyph" viewBox="0 0 40 24" aria-hidden="true">
+        <path d="M14 2a10 10 0 1 0 0 20h4v-5h-4a5 5 0 1 1 0-10h4V2h-4z"/>
+        <path d="M26 2a10 10 0 1 1 0 20h-4v-5h4a5 5 0 1 0 0-10h-4V2h4z"/>
+        <rect x="17" y="9" width="6" height="6"/>
+      </svg>
+      <span>COUPLING<em>LABS</em></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#catalog">Catalog</a>
+      <a href="#method">Method</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="annotation hero-annotation">FIG. 00 — GENERAL ARRANGEMENT <span class="dim-line"></span> SHEET 1 OF 1 · SCALE 1:1 · DO NOT SIMPLIFY</p>
+      <h1 class="hero-title">
+        <span class="line">AI, COUPLED</span>
+        <span class="line">TO THE SYSTEMS</span>
+        <span class="line">YOU ALREADY RUN<span class="accent">.</span></span>
+      </h1>
+
+      <div class="coupling-stage" aria-label="Animated diagram of two machine parts coupling together">
+        <svg id="coupling-svg" viewBox="0 0 760 260" role="img" aria-labelledby="couplingTitle">
+          <title id="couplingTitle">Technical drawing: a shaft labeled YOUR SYSTEMS coupling with a shaft labeled AI</title>
+          <!-- left assembly -->
+          <g id="half-left">
+            <rect class="draw" x="40" y="105" width="260" height="50" rx="4"/>
+            <rect class="draw" x="300" y="75" width="70" height="110" rx="6"/>
+            <circle class="draw bolt" cx="322" cy="95" r="6"/>
+            <circle class="draw bolt" cx="322" cy="165" r="6"/>
+            <circle class="draw bolt" cx="348" cy="95" r="6"/>
+            <circle class="draw bolt" cx="348" cy="165" r="6"/>
+            <path class="draw teeth" d="M370 85 h18 v18 h-18 z M370 121 h18 v18 h-18 z M370 157 h18 v18 h-18 z"/>
+            <text class="label" x="60" y="95">YOUR SYSTEMS</text>
+          </g>
+          <!-- right assembly (teeth interlock with left at rest) -->
+          <g id="half-right">
+            <rect class="draw" x="458" y="105" width="260" height="50" rx="4"/>
+            <rect class="draw" x="388" y="75" width="70" height="110" rx="6"/>
+            <circle class="draw bolt" cx="410" cy="95" r="6"/>
+            <circle class="draw bolt" cx="410" cy="165" r="6"/>
+            <circle class="draw bolt" cx="436" cy="95" r="6"/>
+            <circle class="draw bolt" cx="436" cy="165" r="6"/>
+            <path class="draw teeth" d="M370 103 h18 v18 h-18 z M370 139 h18 v18 h-18 z" />
+            <text class="label label-right" x="718" y="95">AI</text>
+          </g>
+          <!-- dimension lines -->
+          <g class="dims" aria-hidden="true">
+            <line x1="40" y1="220" x2="718" y2="220"/>
+            <line x1="40" y1="212" x2="40" y2="228"/>
+            <line x1="718" y1="212" x2="718" y2="228"/>
+            <text x="379" y="245" text-anchor="middle">TORQUE TRANSMITTED: ALL OF IT</text>
+          </g>
+          <!-- spark on lock -->
+          <g id="lock-spark" aria-hidden="true">
+            <line x1="379" y1="55" x2="379" y2="20"/>
+            <line x1="359" y1="60" x2="339" y2="32"/>
+            <line x1="399" y1="60" x2="419" y2="32"/>
+          </g>
+        </svg>
+      </div>
+
+      <p class="hero-sub">Coupling Labs is an AI engineering studio. We bolt modern AI onto real businesses — enterprise job schedulers, spreadsheets, wikis, phone-shaped workflows — and hand you the keys when it runs.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#catalog">Browse the catalog ↓</a>
+        <a class="btn btn-ghost" href="#contact">Request a fitting</a>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>WORKFLOW AUTOMATION</span><span class="tick-dot">●</span>
+        <span>ENTERPRISE INTEGRATION</span><span class="tick-dot">●</span>
+        <span>MODEL ORCHESTRATION</span><span class="tick-dot">●</span>
+        <span>LOCAL-FIRST LLMS</span><span class="tick-dot">●</span>
+        <span>VOICE SYNTHESIS</span><span class="tick-dot">●</span>
+        <span>VIDEO GENERATION</span><span class="tick-dot">●</span>
+        <span>BROWSER AGENTS</span><span class="tick-dot">●</span>
+        <span>SQL FORENSICS</span><span class="tick-dot">●</span>
+        <span>DOC PIPELINES</span><span class="tick-dot">●</span>
+        <span>WORKFLOW AUTOMATION</span><span class="tick-dot">●</span>
+        <span>ENTERPRISE INTEGRATION</span><span class="tick-dot">●</span>
+        <span>MODEL ORCHESTRATION</span><span class="tick-dot">●</span>
+        <span>LOCAL-FIRST LLMS</span><span class="tick-dot">●</span>
+        <span>VOICE SYNTHESIS</span><span class="tick-dot">●</span>
+        <span>VIDEO GENERATION</span><span class="tick-dot">●</span>
+        <span>BROWSER AGENTS</span><span class="tick-dot">●</span>
+        <span>SQL FORENSICS</span><span class="tick-dot">●</span>
+        <span>DOC PIPELINES</span><span class="tick-dot">●</span>
+      </div>
+    </div>
+
+    <!-- ============ CATALOG ============ -->
+    <section id="catalog" class="catalog">
+      <header class="section-head">
+        <p class="annotation">SECTION A — PARTS CATALOG <span class="dim-line"></span> SIX ASSEMBLIES, FIELD-TESTED</p>
+        <h2>WHAT WE BUILD</h2>
+        <p class="section-sub">Every entry below is something we have actually shipped — not a slide. Names withheld; torque figures real.</p>
+      </header>
+
+      <div class="fig-grid">
+        <article class="fig-card" id="fig-01">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 01</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h20v6H8zM8 21h32v6H8zM8 30h26v6H8z"/><path class="icon-accent" d="M32 8l8 7-8 7z"/></svg>
+          </div>
+          <h3>WORKFLOW AUTOMATION</h3>
+          <p>Your team's most-hated recurring task, done by software while a human approves the result.</p>
+          <ul class="fig-examples">
+            <li>A screenshot of a calendar becomes a fully-entered weekly timesheet — categorized, annotated, submitted.</li>
+            <li>A raw project-tracker export becomes a formatted executive status report, on schedule, every week.</li>
+            <li>A scheduler's job definitions write and update their own wiki documentation. Nobody types it again.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>INPUT</th><td>The mess you already have</td></tr>
+            <tr><th>OUTPUT</th><td>The artifact you owe someone</td></tr>
+            <tr><th>HUMAN TOUCH</th><td>Approval only</td></tr>
+          </tbody></table>
+        </article>
+
+        <article class="fig-card" id="fig-02">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 02</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="18" width="14" height="12"/><rect x="28" y="18" width="14" height="12"/><path class="icon-accent" d="M20 21h8v6h-8z"/></svg>
+          </div>
+          <h3>ENTERPRISE COUPLING</h3>
+          <p>Legacy enterprise plumbing, joined to modern AI without breaking production.</p>
+          <ul class="fig-examples">
+            <li>Production-readiness audit engines: 16 automated checks swept across thousands of scheduled jobs in enterprise workload schedulers (Tidal, Control-M, AutoSys class).</li>
+            <li>SQL Server forensics — hierarchy walks, dependency mapping, and incident reports generated straight from the scheduler's own database.</li>
+            <li>DEV → QA → PROD promotion pipelines with variable mapping, driven by REST APIs instead of humans clicking.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>SUBSTRATE</th><td>Schedulers · SQL Server · REST · wikis</td></tr>
+            <tr><th>BLAST RADIUS</th><td>Zero. Read-only until proven</td></tr>
+            <tr><th>DELIVERABLE</th><td>Running pipeline + documentation</td></tr>
+          </tbody></table>
+        </article>
+
+        <article class="fig-card" id="fig-03">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 03</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="6"/><circle cx="8" cy="10" r="4"/><circle cx="40" cy="10" r="4"/><circle cx="8" cy="38" r="4"/><circle cx="40" cy="38" r="4"/><path class="icon-lines" d="M11 13l9 8m17-8l-9 8m-17 14l9-8m17 8l-9-8"/></svg>
+          </div>
+          <h3>MODEL ORCHESTRATION</h3>
+          <p>The right model for each job — frontier when it matters, local when it's private, cheap when it's routine.</p>
+          <ul class="fig-examples">
+            <li>Routing layers that send sensitive data to models running on <em>your</em> GPUs (Ollama-class), and only sanitized work to cloud frontiers.</li>
+            <li>Multi-provider setups (Anthropic, Google, Groq, OpenRouter) with one interface, evaluated head-to-head on your actual tasks.</li>
+            <li>Honest benchmarking: we've run the experiments on what local models can and cannot do, so you don't buy myths.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>SENSITIVE DATA</th><td>Never leaves your building</td></tr>
+            <tr><th>VENDOR LOCK-IN</th><td>None. Models are swappable parts</td></tr>
+            <tr><th>COST CURVE</th><td>Routed down, measured monthly</td></tr>
+          </tbody></table>
+        </article>
+
+        <article class="fig-card" id="fig-04">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 04</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="24" rx="2"/><path class="icon-accent" d="M20 16l12 6-12 6z"/><path class="icon-lines" d="M10 40h28"/></svg>
+          </div>
+          <h3>GENERATIVE MEDIA</h3>
+          <p>Video, voice, and image pipelines that run on hardware you own — no per-second API meter.</p>
+          <ul class="fig-examples">
+            <li>Talking-head video presenters generated locally from a single photo and an audio track (Wan-class diffusion models on consumer GPUs).</li>
+            <li>Voice cloning and narration (F5-TTS class): a consistent branded voice for videos, IVR, and training content.</li>
+            <li>Character and scene pipelines for content channels — repeatable, versioned, yours.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>RUNS ON</th><td>Your GPUs, your premises</td></tr>
+            <tr><th>MARGINAL COST</th><td>Electricity</td></tr>
+            <tr><th>RIGHTS</th><td>You own every frame</td></tr>
+          </tbody></table>
+        </article>
+
+        <article class="fig-card" id="fig-05">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 05</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l16 9v18l-16 9-16-9V15z" fill="none" class="icon-stroke"/><circle class="icon-accent" cx="24" cy="24" r="5"/></svg>
+          </div>
+          <h3>AGENTS THAT OPERATE SOFTWARE</h3>
+          <p>Agents that click, type, read, and reconcile — in the same UIs your team uses, with an audit trail.</p>
+          <ul class="fig-examples">
+            <li>Browser agents that drive real web apps end-to-end: registrar dashboards, admin panels, lead-triage inboxes.</li>
+            <li>Community and support bots (Discord-class) that answer from your data and post scheduled content.</li>
+            <li>Desktop automation that survives flaky UIs — retry logic, element targeting, screenshot verification.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>SUPERVISION</th><td>Configurable: none → every click</td></tr>
+            <tr><th>AUDIT TRAIL</th><td>Screenshots + logs, always</td></tr>
+            <tr><th>FAILURE MODE</th><td>Stops and asks. Never guesses twice</td></tr>
+          </tbody></table>
+        </article>
+
+        <article class="fig-card" id="fig-06">
+          <div class="fig-head">
+            <span class="fig-no">FIG. 06</span>
+            <svg class="fig-icon" viewBox="0 0 48 48" aria-hidden="true"><path class="icon-stroke" fill="none" d="M16 14l-8 10 8 10M32 14l8 10-8 10"/><path class="icon-accent" d="M26 10l-6 28h4l6-28z"/></svg>
+          </div>
+          <h3>BUILDS</h3>
+          <p>Software, shipped fast and owned by you. This site is one: hand-written, no framework, no build step.</p>
+          <ul class="fig-examples">
+            <li>Marketing and product sites deployed to global CDNs in an afternoon — including DNS, HTTPS, the works.</li>
+            <li>Internal GUI tools that wrap gnarly processes (config generators, doc publishers) so anyone on the team can run them.</li>
+            <li>Dashboards and report generators wired straight to your data.</li>
+          </ul>
+          <table class="spec"><tbody>
+            <tr><th>STACK</th><td>As boring as possible, on purpose</td></tr>
+            <tr><th>PAGE WEIGHT</th><td>This page: no JS framework, ~0 deps</td></tr>
+            <tr><th>HANDOFF</th><td>Your repo, your keys</td></tr>
+          </tbody></table>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ METHOD ============ -->
+    <section id="method" class="method">
+      <header class="section-head">
+        <p class="annotation">SECTION B — ASSEMBLY PROCEDURE <span class="dim-line"></span> READ BEFORE OPERATING</p>
+        <h2>HOW A COUPLING GETS MADE</h2>
+      </header>
+      <ol class="method-steps">
+        <li>
+          <span class="step-no">01</span>
+          <h3>AUDIT</h3>
+          <p>We find the highest-torque coupling point — the one task where AI hours replace the most human hours. Usually it's not the one you'd guess.</p>
+        </li>
+        <li>
+          <span class="step-no">02</span>
+          <h3>PROTOTYPE</h3>
+          <p>A working demonstration on your real data in days, not decks. If it doesn't survive contact with reality, you find out for cheap.</p>
+        </li>
+        <li>
+          <span class="step-no">03</span>
+          <h3>COUPLE</h3>
+          <p>Integration with guardrails: read-only first, human approval gates, audit logs. Production earns trust incrementally.</p>
+        </li>
+        <li>
+          <span class="step-no">04</span>
+          <h3>HAND OFF</h3>
+          <p>Documentation, training, and the keys. You own the code, the prompts, and the pipeline. We're a call away, not a dependency.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section id="principles" class="principles">
+      <header class="section-head">
+        <p class="annotation">SECTION C — MATERIAL PROPERTIES <span class="dim-line"></span> NON-NEGOTIABLE</p>
+        <h2>PRINCIPLES</h2>
+      </header>
+      <div class="principle-grid">
+        <div class="principle">
+          <h3>LOCAL-FIRST PRIVACY</h3>
+          <p>Sensitive data runs on models you host. We route by sensitivity before we route by anything else.</p>
+        </div>
+        <div class="principle">
+          <h3>YOU OWN THE OUTPUT</h3>
+          <p>Code, prompts, pipelines, documentation — deliverables, not subscriptions. No black boxes with our logo on them.</p>
+        </div>
+        <div class="principle">
+          <h3>BORING RELIABILITY</h3>
+          <p>The flashiest demo loses to the pipeline that ran every night this quarter. We optimize for the second one.</p>
+        </div>
+        <div class="principle">
+          <h3>PROOF OVER PROMISES</h3>
+          <p>Every engagement starts with a working prototype on your data. If we can't show it, we don't sell it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <p class="annotation">SECTION D — REQUEST A FITTING <span class="dim-line"></span> RESPONSE WITHIN ONE BUSINESS DAY</p>
+      <h2>GOT A SYSTEM THAT NEEDS<br>AN AI BOLTED ON<span class="accent">?</span></h2>
+      <p class="contact-sub">Tell us what you run and what you're tired of doing by hand. We'll tell you — honestly — whether AI can take it.</p>
+      <a class="btn btn-primary btn-xl" href="mailto:jesten@couplinglabs.ai">jesten@couplinglabs.ai</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <span class="footer-mark">COUPLING<em>LABS</em></span>
+      <span class="footer-note">BUILT WITH OUR OWN TOOLS · NO FRAMEWORK · NO TRACKERS</span>
+      <span class="footer-copy">© 2026 COUPLING LABS · COUPLINGLABS.AI</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
